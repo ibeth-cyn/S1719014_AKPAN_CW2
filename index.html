@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Markazi+Text:500" rel="stylesheet">
+    <title>Search Universities in Nigeria, Mauritius and the UK</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div id="landingpage">
+        <div class="topnav" id="topnav">
+            <div class="logo">
+                <a href="#landingpage">
+                    <img id="logo" src="images/logo.png" alt="Brand logo">
+                </a>
+            </div>
+            <div id="quicklinks">
+                <ul>
+                    <li>
+                        <a href="#mauritius">Mauritius</a>
+                    </li>
+                    <li>
+                        <a href="#nigeria">Nigeria</a>
+                    </li>
+                    <li>
+                        <a href="#uk">UK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h1>A database </h1>
+            <h1>of universities in</h1>
+            <h1>Mauritius, Nigeria and the UK.</h1>
+        </div>
+        <a href="#mauritius">
+            <img src="images/down-arrow.png" alt="" style=" padding-left: 50%; padding-top: 12%;">
+        </a>
+    </div>
+    <div id="mauritius">
+        <h1 class="top">Find Universities in Mauritius</h1>
+        <div class="countrycontainer">
+            <div class="containerstyle country">
+                <h2>List of Universities</h2>
+                <p>We know finding a university can be difficult.</p>
+                <p>Here at
+                    <strong>uniSearch</strong>, we believe choosing what university to attend should be an informed decision.</p>
+                <p>In light of this,we have a compilation of the list of universities in Mauritius and links to their website.</p>
+                <button class="myBtn" type="button" onclick="showModal()">SEE MORE</button>
+            </div>
+            <div class="containerstyle carousel">
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChart" style="display: block;"></canvas>
+                </div>
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChartI" style="display: none;"></canvas>
+                </div>
+                <a class="prev" onclick="minusSlides1()">&#10094;</a>
+                <a class="next" onclick="plusSlides1()">&#10095;</a>
+            </div>
+        </div>
+        <div id ="myMod" class="modal">
+            <h2><strong>List of Universities</strong></h2>
+            <div class="modal_content">
+                <span class="close" id="close" onclick="hideModal()">&times;</span>
+                <ol class="unilist" id="unilist"></ol>
+            </div>
+        </div>
+    </div>
+    <div id="nigeria">
+        <h1 class="top">Find Universities in Nigeria</h1>
+        <div class="countrycontainer">
+            <div class="containerstyle country">
+                <h2>List of Universities</h2>
+                <p>We know finding a university can be difficult.</p>
+                <p>Here at
+                    <strong>uniSearch</strong>, we believe choosing what university to attend should be an informed decision.</p>
+                <p>In light of this,we have a compilation of the list of universities in Nigeria and links to their website.</p>
+                <button class="myBtn" type="button" onclick="showModal1()">SEE MORE</button>
+            </div>
+            <div class="containerstyle carousel">
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChart1" style="display: block;"></canvas>
+                </div>
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChartII" style="display: none;"></canvas>
+                </div>
+                <a class="prev" onclick="minusSlides2()">&#10094;</a>
+                <a class="next" onclick="plusSlides2()">&#10095;</a>
+            </div>
+        </div>
+        <div id="myModa" class="modal1">
+            <h2><strong>List of Universities</strong></h2>
+            <div class="modal_content">
+                <span class="close" id="clos" onclick="hideModal1()">&times;</span>
+                <ol class="unilist" id="unilist1"></ol>
+            </div>
+        </div>
+    </div>
+    <div id="uk">
+        <h1 class="top">Find Universities in the UK</h1>
+        <div class="countrycontainer">
+            <div class="containerstyle country">
+                <h2>List of Universities</h2>
+                <p>We know finding a university can be difficult.</p>
+                <p>Here at
+                    <strong>uniSearch</strong>, we believe choosing what university to attend should be an informed decision.</p>
+                <p>In light of this,we have a compilation of the list of universities in the UK and links to their website.</p>
+                <button class="myBtn" type="button" onclick="showModal2()">SEE MORE</button>
+            </div>
+            <div class="containerstyle carousel">
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChart2" style="display: block;"></canvas>
+                </div>
+                <div class="kountry fade">
+                    <canvas class="chart" id="myChartIII" style="display: none;"></canvas>
+                </div>
+                <a class="prev" onclick="minusSlides3()">&#10094;</a>
+                <a class="next" onclick="plusSlides3()">&#10095;</a>
+            </div>
+        </div>
+        <a href="#landingpage">
+            <img id= "moveUp" src="images/arrow-heading-up.png" alt="" style="padding-left: 50%; padding-top: 2px;">
+        </a>
+        <div id="myModal" class="modal2">
+            <h2><strong>List of Universities</strong></h2>
+            <div class="modal_content">
+                <span class="close" id="clo" onclick="hideModal2()">&times;</span>
+                <ol class="unilist" id="unilist2"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/list.js"></script>
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/linechart.js"></script>
+    <script src="javascript/barchart.js"></script>
+    <script src="javascript/slider.js"></script>
+</body>
+<footer id="footer">
+    <h2>&copy; 2018 Designed and created by Elizabeth Akpan.</h2>
+</footer>
+
+</html>

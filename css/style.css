@@ -1,0 +1,335 @@
+/**applies to the whole page*/
+html {
+  margin: 0 ;
+  padding: 0;
+  width: 100%;
+}
+/**applies to body content*/
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/**styling for the landing page*/
+#landingpage{
+  background-image: linear-gradient(rgba(6,3,26,0.45), 
+  rgba(6,3,26,0.45)),url("../images/backie.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+/*styling for the unordered list in the nav bar*/
+ul{
+  list-style-type:none;
+  margin: 0;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+/** default styling for all h2 tags in the html*/
+h2{
+  font-family: 'Lato', sans-serif;
+  font-weight: 450;
+  font-size: 25px;
+  color: #06031A;
+  margin-left: 0px;
+  margin-top: 5%;
+  margin-right: 0px;
+}
+/**styles the navigation bar and places it in position*/
+.topnav{
+  background: linear-gradient(rgba(247, 247, 255, 0.93),rgba(247, 247, 255, 0.93) );
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(51,65,57,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(51,65,57,1);
+  box-shadow: 0px 0px 5px 0px rgba(51,65,57,1);
+
+  
+}
+/**positions the logo in its position in the navigation bar*/
+.topnav .logo{
+  float: left;
+}
+/**displays the links in the navigation in line*/
+li {
+  display: inline;
+}
+/**sets style for the anchor links in the navigation bar*/
+li a{
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right:  40px;
+  font-family: 'Lato', sans-serif !important ;
+  color: #06031a;
+  font-weight: bold;
+}
+/**sets dimensions of the logo image*/
+.logo img{
+  height: 50px;
+  width: 80px;
+  padding: 10px 0px 0px 62px;
+}
+/**sets default style for h1 tags in the document*/
+/**other h1 tags get more specific styling so, some features here are cancelled out in the styling of other h1 tags*/
+h1{
+  margin: 0;
+  color: #f7f7ff;
+  padding-top: 6px;
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+}
+/**stlyes the text in the landing page*/
+#landingpage .text{
+  padding-top: 280px;
+  padding-left: 90px;
+}
+/**styles the list of the names of universities*/
+.unilist li a{
+  text-transform: capitalize;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+}
+/**styling for h1 tag of the mauritius page*/
+#mauritius h1{
+  font-family: 'Lato', sans-serif;
+  padding-top: 150px;
+  font-size: 35px;
+  text-align: center;
+  color: #06031A;
+}
+/**sets default styling for the mauritius page*/
+#mauritius{
+  background-attachment: fixed;
+  background-color:#f7f7ff;
+  display: block;
+  width: 100%;
+}
+/**sets the line below the h1 tag of the mauritius page*/
+#mauritius h1::after{
+  display: block;
+  height: 3px;
+  background-color: black;
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+/**styling for the h1 tag of the nigeria page*/
+#nigeria h1{
+  font-family: 'Lato', sans-serif;
+  padding-top: 150px;
+  font-size: 35px;
+  text-align: center;
+  color: #06031A;
+}
+/**sets the default styling for the nigeria page*/
+#nigeria{
+  background-attachment: fixed;
+  background-color:#f7f7ff;
+  display: block;
+  width: 100%;
+}
+/**sets the line below the h1 tag of the nigeria page*/
+#nigeria h1::after{
+  display: block;
+  height: 3px;
+  background-color: black;
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+/**styling for the h1 tag of the uk page */
+#uk h1{
+  font-family: 'Lato', sans-serif;
+  padding-top: 150px;
+  font-size: 35px;
+  text-align: center;
+  color: #06031A;
+}
+/**sets the default styling for the uk page*/
+#uk{
+  background-size: cover;
+  background-attachment: fixed;
+  background-color:#f7f7ff;
+  display: block;
+  width: 100%;
+}
+/**sets the line below the h1 tag of the uk page*/
+#uk h1::after{
+  display: block;
+  height: 3px;
+  background-color: black;
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+/**styling for div containing both the list of universities and a slider of the charts*/
+.countrycontainer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/**styling for the div containing the list of universities*/
+.country{
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(6,3,26,1);
+  -moz-box-shadow: 0px 0px 29px 0px rgba(6,3,26,1);
+  box-shadow: 0px 0px 29px 0px rgba(6,3,26,1);
+  color: #f7f7ff;
+  position: relative;
+  padding: 2%;
+  width: 35%;
+}
+/**styling for the list containing the slider*/
+.carousel{
+position: relative;
+width: 45%;
+}
+/** styles the list of country divs and the div for the charts*/
+.containerstyle{
+  margin-top:30px;
+  vertical-align: top;
+  position: relative;
+}
+/**styling for the angular arrow pointing to the right side in the slider*/
+.prev{
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/**styling for the angular arrow pointing to the left side in the slider*/
+.next {
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  position: absolute;
+  right: 0px;
+}
+/**styling the paragraphs for each university list*/
+p{
+  color: #06031A;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin-left: 0;
+  margin-top: 3%;
+  margin-right: 0;
+  
+}
+/**styling for the button to see universities list*/
+.myBtn{
+  padding: 1px;
+  width: 80px;
+  height: 40px;
+  font-size: 12px;
+  color: #f7f7ff;
+  background-color:#06031a;
+  border-radius:5px;
+  position: absolute;
+  bottom: 0px;
+  left:40%;
+}
+/**styling the close button */
+.close {
+  color: black;
+  float: right;
+  font-size: 52px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 25px;
+  position: absolute;
+  top: 0;
+  right: 20px;  
+}
+/**styling for hovering the close button*/
+.close:hover{
+  transform: rotate(90deg);
+  opacity: 1;
+}
+/**styling of the modal that displays the list of univeristies in mauritius*/
+#mauritius .modal{
+  background-color: rgba(247, 247, 255, 1);
+  width:50%;
+  height: 60%;
+  z-index: 1;
+  top: 1083px;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  display: none;
+} 
+/**styling of the modal that displays the list of univeristies in nigeria*/
+#nigeria .modal1{
+  background-color: rgba(247, 247, 255, 1);
+  width:50%;
+  height: 50%;
+  z-index: 1;
+  top: 1684px;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  display: none;
+}
+/**sets padding for the display of content in the modal*/
+.modal_content{ 
+  padding-right: 40px;
+}
+.modal_content li{
+  display: list-item;
+  font-family: 'Lato', sans-serif;
+}
+/**styling of the modal that displays the list of univeristies in the uk*/
+#uk .modal2{
+  background-color: rgba(247, 247, 255, 1);
+  width:50%;
+  height: 55%;
+  z-index: 1;
+  top: 2250px;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  display: none;
+}
+/**styling that defines the dimensions of the footer*/
+#footer{
+  height: 80px;
+  width: 100%;
+  background-color: #06031A;
+}
+/**styling of the content in the footer*/
+#footer h2{
+  color: #f7f7ff;
+  margin: 0;
+  padding-top: 32px;
+  text-align:center;
+  font-size: 20px
+}
+.kountry{
+  width:95%;
+  margin:auto;
+}
